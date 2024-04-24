@@ -45,7 +45,7 @@ const IntroPage = () => {
 
             const response: any = {
                 data: {
-                    message: "สาขาวิชาวิศวกรรมคอมพิวเตอร์และหุ่นยนต์ ตรวจสอบหลักสูตรหรือ Year Plan ได้ที่ https://contents.bu.ac.th/uploads/faculty/degree_plan/degree_plan-computer-and-robotics-1686816084.pdf, สาขาวิชาวิศวกรรมมัลติมีเดียและเอ็นเตอร์เทนเมนต์ ตรวจสอบหลักสูตรหรือ Year Plan ได้ที่ https://contents.bu.ac.th/uploads/faculty/degree_plan/degree_plan-multimedia-and-entertainment-1686816115.pdf, สาขาวิชาวิศวกรรมไฟฟ้า ตรวจสอบหลักสูตรหรือ Year Plan ได้ที่ https://contents.bu.ac.th/uploads/faculty/degree_plan/degree_plan-multimedia-and-entertainment-1686816115.pdf, สาขาวิชาวิศวกรรมปัญญาประดิษฐ์และวิทยาการข้อมูล ตรวจสอบหลักสูตรหรือ Year Plan ได้ที่ https://contents.bu.ac.th/uploads/faculty/degree_plan/degree_plan-ai-engineering-datascience-1686816871.pdf",
+                    message: `[สาขาวิชาวิศวกรรมคอมพิวเตอร์และหุ่นยนต์](https://contents.bu.ac.th/uploads/faculty/degree_plan/degree_plan-computer-and-robotics-1686816084.pdf), [สาขาวิชาวิศวกรรมมัลติมีเดียและเอ็นเตอร์เทนเมนต์](https://contents.bu.ac.th/uploads/faculty/degree_plan/degree_plan-multimedia-and-entertainment-1686816115.pdf), [สาขาวิชาวิศวกรรมไฟฟ้า](https://contents.bu.ac.th/uploads/faculty/degree_plan/degree_plan-electrical-1686816132.pdf), [สาขาวิชาวิศวกรรมปัญญาประดิษฐ์และวิทยาการข้อมูล](https://contents.bu.ac.th/uploads/faculty/degree_plan/degree_plan-ai-engineering-datascience-1686816871.pdf)`,
                     role: "bot"
                 }
             }

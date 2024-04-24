@@ -39,14 +39,16 @@ const ResumePage = () => {
                 role: "user"
             }
 
-            const response = await axios.post("...", {
-                text: values.prompt
-            });
+            //const response = await axios.post("...", {
+            //    text: values.prompt
+            //});
 
-            const botMessage: any = {
-                message: response.data.text,
-                role: "bot"
-            };
+            const response: any = {
+                data: {
+                    message: "Coming Soon :)",
+                    role: "bot"
+                }
+            }
 
             setIndex(index+1);        
             setMessages((current) => [...current, userMessage, botMessage]);
