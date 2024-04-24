@@ -39,8 +39,8 @@ const RegisPage = () => {
                 role: "user"
             }
 
-            const response = await axios.post("http://localhost:5000/2024/assistant", {
-                text: values.prompt
+            const response = await axios.post("...", {
+                text: "สามารถดูรายละเอียดได้ที่ https://contents.bu.ac.th/contents/files/uploads/calendar-20240302002809.pdf"
             });
 
             const botMessage: any = {
