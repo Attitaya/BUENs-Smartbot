@@ -39,7 +39,7 @@ const GeneralPage = () => {
                 role: "user"
             }
 
-            const response = await axios.post("http://localhost:5000/2024/chats", {
+            const response = await axios.post("https://thesisbackend-3.onrender.com/2024/chats", {
                 text: values.prompt
             });
 

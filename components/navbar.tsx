@@ -51,13 +51,14 @@ export const Navbar = () => {
                     <Menu />
                 </Button>
                 {showMenu && (
-                    <div className="absolute top-0 left-0 w-screen h-screen bg-white text-pure-black  flex flex-col justify-center items-center gap-8 text-4xl z-40">
+                    <div className="absolute top-0 left-0 w-screen h-screen bg-[#952323] text-white flex flex-col justify-center items-center gap-8 text-4xl z-40">
                         <div className="md:flex md:items-center md:space-x-4 m-auto">
                             {routes.map((route) => (
                                 <Link href={route.href} key={route.href} onClick={handleItemClick}
-                                className="text-xl">
+                                className="text-xl group flex p-3 
+                                justify-items-end font-medium cursor-pointer ms-4">
                                     <div className="relative">
-                                        <div className={cn("relative z-10 flex items-center justify-items-left w-48 h-12 text-xl text-black transition", thasadith.className)}>
+                                        <div className={cn("relative z-10 flex items-center justify-items-left w-48 h-12 text-xl text-white transition", thasadith.className)}>
                                             {route.label}
                                         </div>
                                     </div>
