@@ -51,7 +51,7 @@ const ResumePage = () => {
             }
 
             setIndex(index+1);        
-            setMessages((current) => [...current, userMessage, botMessage]);
+            setMessages((current) => [...current, userMessage, response.data]);
 
             form.reset();
         } catch (error: any) {
