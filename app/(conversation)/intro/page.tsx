@@ -39,19 +39,17 @@ const IntroPage = () => {
                 role: "user"
             }
 
-            //const response = await axios.post("...", {
-            //    text: values.prompt
-            //});
+            const response = await axios.post("http://localhost:5000/2024/assistant", {
+                text: values.prompt
+            });
 
-            const response: any = {
-                data: {
-                    message: `[สาขาวิชาวิศวกรรมคอมพิวเตอร์และหุ่นยนต์](https://contents.bu.ac.th/uploads/faculty/degree_plan/degree_plan-computer-and-robotics-1686816084.pdf), [สาขาวิชาวิศวกรรมมัลติมีเดียและเอ็นเตอร์เทนเมนต์](https://contents.bu.ac.th/uploads/faculty/degree_plan/degree_plan-multimedia-and-entertainment-1686816115.pdf), [สาขาวิชาวิศวกรรมไฟฟ้า](https://contents.bu.ac.th/uploads/faculty/degree_plan/degree_plan-electrical-1686816132.pdf), [สาขาวิชาวิศวกรรมปัญญาประดิษฐ์และวิทยาการข้อมูล](https://contents.bu.ac.th/uploads/faculty/degree_plan/degree_plan-ai-engineering-datascience-1686816871.pdf)`,
-                    role: "bot"
-                }
-            }
+            const botMessage: any = {
+                message: response.data.textResponse,
+                role: "bot"
+            };
 
             setIndex(index+1);        
-            setMessages((current) => [...current, userMessage, response.data]);
+            setMessages((current) => [...current, userMessage, botMessage]);
 
             form.reset();
         } catch (error: any) {

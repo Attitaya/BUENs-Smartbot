@@ -39,19 +39,17 @@ const RegisPage = () => {
                 role: "user"
             }
 
-            //const response = await axios.post("...", {
-            //    text: "สามารถดูรายละเอียดได้ที่ https://contents.bu.ac.th/contents/files/uploads/calendar-20240302002809.pdf"
-            //});
+            const response = await axios.post("http://localhost:5000/2024/assistant", {
+                text: values.prompt
+            });
 
-            const response: any = {
-                data: {
-                    message: "สามารถดูรายละเอียดได้ที่ https://contents.bu.ac.th/contents/files/uploads/calendar-20240302002809.pdf",
-                    role: "bot"
-                }
-            }
+            const botMessage: any = {
+                message: response.data.textResponse,
+                role: "bot"
+            };
 
             setIndex(index+1);        
-            setMessages((current) => [...current, userMessage, response.data]);
+            setMessages((current) => [...current, userMessage, botMessage]);
 
             form.reset();
         } catch (error: any) {

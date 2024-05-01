@@ -40,10 +40,6 @@ export const Navbar = () => {
         setShowMenu(!showMenu);
     };
 
-    const handleItemClick = () => {
-        setShowMenu(false); // ปิดเมนูเมื่อคลิกที่เมนู
-    };
-
     return (
         <div className="flex items-center justify-end p-4">
             <div className="md:hidden">
@@ -54,7 +50,7 @@ export const Navbar = () => {
                     <div className="absolute top-0 left-0 w-screen h-screen bg-[#952323] text-white flex flex-col justify-center items-center gap-8 text-4xl z-40">
                         <div className="md:flex md:items-center md:space-x-4 m-auto">
                             {routes.map((route) => (
-                                <Link href={route.href} key={route.href} onClick={handleItemClick}
+                                <Link href={route.href} key={route.href}
                                 className="text-xl group flex p-3 
                                 justify-items-end font-medium cursor-pointer ms-4">
                                     <div className="relative">
